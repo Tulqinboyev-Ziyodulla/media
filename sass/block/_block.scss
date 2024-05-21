@@ -1,0 +1,72 @@
+.block {
+    display: flex;
+    margin-top: 128px;
+    gap: 116px;
+
+    &__text {
+
+        .with {
+            color: $bg-blue;
+            font-size: $bg-size;
+            font-weight: 400;
+        }
+
+        .more {
+            color: $bg-py;
+            font-size: 32px;
+            font-weight: 700;
+            margin-top: 16px;
+        }
+
+        .see {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .in {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+            gap: 16px;
+
+            p {
+                color: $bg-dark;
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+@media (max-width:800px) {
+    .block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+    }
+}
+
+
+@media (max-width:450px) {
+    .block {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: auto;
+
+        .block__text {
+
+            .more {
+                font-size: 18px;
+            }
+        }
+
+        .block__img {
+            width: 300px;
+        }
+    }
+}

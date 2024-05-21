@@ -1,0 +1,58 @@
+.footer {
+    background-color: $bg-py;
+    min-height: 144px;
+
+    &__line {
+        width: 100px;
+        min-height: 1px;
+        background-color: #E3E3E3;
+
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 54px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        
+        .footer__text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+        
+        .footer__text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .footer {
+        
+        .footer__text {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            margin-top: 50px;
+            font-size: 8px;
+        }
+    }
+}
